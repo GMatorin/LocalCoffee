@@ -4,10 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Your Local Coffee</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#coffee">our coffee</a></li>
+        <li><a href="#meals">our meals</a></li>
+        <li><a href="#location">location</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-all">
+      <div class="welcome" id="home">
+        <div class="welcome-hero">
+          <div class="welcome-hero_info">
+            <h3>Enjoy your meal</h3>
+            <h1>In Fresh & Healthy</h1>
+            <p>
+              We offer best quality coffee and meals out of fresh products from
+              local farmers.
+            </p>
+          </div>
+        </div>
+        <div class="welcome-info">
+          <button class="menu-button">
+            <img src="img/menuBtn.svg" alt="" />
+          </button>
+          <p>mylocalcoffee@gmail.com</p>
+          <p>+1 111 222 333</p>
+          <div class="welcome-info_social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="about-coffee">
+          <div class="about-coffee_info">
+            <div class="info-wrapper">
+              <h2>Our Coffee</h2>
+              <p>
+                We have different sorts of coffee from places with richest
+                coffee planting traditions.
+              </p>
+            </div>
+            <img src="img/coffeeBeans.png" alt="coffee" id="coffee-beans" />
+          </div>
+          <div class="about-coffee_image">
+            <img src="img/beans-caffeine-coffee.jpg" alt="coffee-beans" />
+          </div>
+        </div>
+        <div class="about-meals">
+          <div class="about-meals_info">
+            <div class="info-wrapper">
+              <h2>Our Meals</h2>
+              <p>
+                All best food from local farmers markets prepared with love for
+                you.
+              </p>
+            </div>
+            <img src="img/leaves.png" alt="leaves" id="leaves-green" />
+          </div>
+          <div class="about-meals_image">
+            <img
+              src="img/berries-blueberries-bread.jpg"
+              alt="sweet breakfast"
+              class="meals_image1"
+            />
+            <img src="img/Breakfast.jpg" alt="breakfast" class="meals_image2" />
+          </div>
+        </div>
+      </div>
+      <div class="menu-coffee" id="coffee">
+        <h2>Try Our Coffee</h2>
+        <div class="menu-coffee-images">
+          <img
+            src="img/french-press.jpg"
+            alt="french press"
+            class="menu-coffee_image1"
+          />
+          <img
+            src="img/filter-coffee.jpg"
+            alt="filter coffee"
+            class="menu-coffee_image2"
+          />
+          <img
+            src="img/cold-coffee.jpg"
+            alt="cold coffee"
+            class="menu-coffee_image3"
+          />
+          <img
+            src="img/cappuccino.jpg"
+            alt="cappuccino"
+            class="menu-coffee_image4"
+          />
+          <img src="img/chemex.jpg" alt="chemex" class="menu-coffee_image5" />
+        </div>
+        <div class="menu-coffee_footer">
+          <h3>All Drinks</h3>
+          <button class="download-menu">Download PDF</button>
+        </div>
+      </div>
+      <div class="menu-meals" id="meals">
+        <h2>Try Our Meals</h2>
+        <div class="menu-meals-images">
+          <img
+            src="img/pancakes.jpg"
+            alt="pancakes"
+            class="menu-meals_image1"
+          />
+          <img
+            src="img/breakfast-egg.jpg"
+            alt="breakfast"
+            class="menu-meals_image2"
+          />
+          <img
+            src="img/sandwiches.jpg"
+            alt="sandwiches"
+            class="menu-meals_image3"
+          />
+          <img src="img/bakery.jpg" alt="bakery" class="menu-meals_image4" />
+        </div>
+        <div class="menu-meals_footer">
+          <h3>All Drinks</h3>
+          <button class="download-menu">Download PDF</button>
+        </div>
+      </div>
+      <div id="location" class="location">
+        <h2>Our Location</h2>
+        <div id="map"></div>
+      </div>
+      <footer>
+        <div class="footer-telefon">
+          <p>Telephone Number:</p>
+          <p>+1 111 222 333</p>
+        </div>
+        <div class="footer-email">
+          <p>Email:</p>
+          <p>mylocalcoffee@gmail.com</p>
+        </div>
+        <div class="footer-address">
+          <p>144 East End Ave,</p>
+          <p>New York, NY 10028</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
