@@ -1,0 +1,22 @@
+{
+  "name": "localcoffee",
+  "version": "1.0.0",
+  "description": "Local Coffee House Landing",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMatorin/LocalCoffee.git"
+  },
+  "author": "GMatorin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GMatorin/LocalCoffee/issues"
+  },
+  "homepage": "https://github.com/GMatorin/LocalCoffee#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
