@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:400,500,700|Old+Standard+TT:400,700&display=swap");
+p {
+  font-size: 21px; }
+
+img {
+  width: 20px; }
+
+figcaption {
+  font-weight: 300; }
+
 .hide {
   display: none; }
+
+.image-active {
+  flex: 4; }
 
 body {
   font-family: "Cormorant", serif;
@@ -20,6 +32,7 @@ body {
 
 .welcome-hero {
   background: url(../img/coffee-shop.jpg);
+  background-position: 0 50%;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -36,7 +49,7 @@ body {
   .welcome-hero_info {
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
-    height: 27%;
+    height: 32%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -58,6 +71,7 @@ body {
   .welcome .nav-info .menu-btn {
     z-index: 3;
     margin-left: 2rem;
+    padding: 0.7rem 0;
     cursor: pointer;
     transition: all 0.5s ease-out;
     flex-basis: 10%;
@@ -91,5 +105,82 @@ body {
       .welcome .nav-info-social a i {
         margin-right: 2rem; }
 
-img {
-  width: 20px; }
+.about-coffee_info .info-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .about-coffee_info .info-wrapper p {
+    text-align: center;
+    color: #545454; }
+
+.about-coffee_image {
+  width: 100%;
+  position: relative; }
+  .about-coffee_image::before {
+    content: 'Arabica from Columbia and Ethiopia';
+    position: absolute;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(88, 155, 125, 0.7);
+    color: #fff;
+    height: 50px;
+    line-height: 50px; }
+  .about-coffee_image::after {
+    content: 'Robusta from Brazil and Nigeria';
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    bottom: 5px;
+    background-color: rgba(88, 155, 125, 0.7);
+    color: #fff;
+    height: 50px;
+    line-height: 50px; }
+  .about-coffee_image img {
+    width: 100%; }
+
+.about-meals_info .info-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .about-meals_info .info-wrapper p {
+    text-align: center;
+    color: #545454; }
+
+.about-meals_image {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [imgFirs-start] 1fr [imgSecond-start] 1fr [imgFirs-end] 1fr [imgSecond-end]; }
+  .about-meals_image img {
+    width: 100%; }
+    .about-meals_image img:first-child {
+      grid-column: imgFirs-start/imgFirs-end;
+      grid-row: 1/3;
+      z-index: 5; }
+    .about-meals_image img:last-child {
+      grid-column: imgSecond-start/imgSecond-end;
+      grid-row: 2/4; }
+
+.menu-coffee h2 {
+  text-align: center;
+  padding: 3.5rem 0 2.5rem 0; }
+
+.menu-coffee-images {
+  display: flex;
+  width: 100%; }
+  .menu-coffee-images * {
+    flex: 1; }

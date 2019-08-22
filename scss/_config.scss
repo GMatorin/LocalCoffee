@@ -9,3 +9,15 @@ $font-main: 'Cormorant', serif;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+p {
+  font-size: 21px;
+}
+
+img {
+  width: 20px;
+}
+
+figcaption {
+  font-weight: 300;
+}
