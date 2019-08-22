@@ -1,2 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant:400,500,700|Old+Standard+TT:400,700&display=swap");
+.hide {
+  display: none; }
+
 body {
-  background: red; }
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 600; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container-all {
+  width: 100%; }
+
+.welcome-hero {
+  background: url(../img/coffee-shop.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .welcome-hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .welcome-hero_info {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .welcome-hero_info .text-wrapper {
+      height: 80%;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+
+.welcome .nav-info {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5em 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between; }
+  .welcome .nav-info .menu-btn {
+    z-index: 3;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .welcome .nav-info .menu-btn .btn-line {
+      width: 100%;
+      height: 2px;
+      background: #12100e;
+      transition: all 0.5s ease-out; }
+    .welcome .nav-info .menu-btn.close {
+      transform: rotate(180deg); }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); }
+  .welcome .nav-info-social {
+    flex-basis: 90%;
+    display: flex;
+    justify-content: flex-end; }
+    .welcome .nav-info-social a {
+      z-index: 3;
+      color: #12100e;
+      cursor: pointer; }
+      .welcome .nav-info-social a:hover {
+        transition: all 0.5s ease-out;
+        color: #545454; }
+      .welcome .nav-info-social a i {
+        margin-right: 2rem; }
+
+img {
+  width: 20px; }
