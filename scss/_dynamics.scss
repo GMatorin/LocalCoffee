@@ -2,6 +2,46 @@
   display: none;
 }
 
-.image-active {
-  flex: 4;
+.coffee-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 320px;
+  figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(88, 155, 125, 0.7);
+  }
+}
+
+.meal-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 270px;
+  figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(88, 155, 125, 0.7);
+  }
 }

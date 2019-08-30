@@ -11,8 +11,43 @@ figcaption {
 .hide {
   display: none; }
 
-.image-active {
-  flex: 4; }
+.coffee-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 320px; }
+  .coffee-fig-active figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(88, 155, 125, 0.7); }
+
+.meal-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 270px; }
+  .meal-fig-active figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(88, 155, 125, 0.7); }
 
 body {
   font-family: "Cormorant", serif;
@@ -180,7 +215,73 @@ body {
   padding: 3.5rem 0 2.5rem 0; }
 
 .menu-coffee-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0; }
+  .menu-coffee-images figure {
+    order: 2; }
+    .menu-coffee-images figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .menu-coffee-images figure figcaption {
+      display: none; }
+
+.menu-coffee_footer {
+  width: 100%;
+  height: 4em;
   display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .menu-coffee_footer button {
+    background-color: #fff;
+    border: 1px #12100e solid;
+    border-radius: 0.9rem;
+    color: #12100e;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 1rem; }
+
+.menu-meals h2 {
+  text-align: center;
+  padding: 1.5rem 0 2.5rem 0; }
+
+.menu-meals-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0; }
+  .menu-meals-images figure {
+    order: 2; }
+    .menu-meals-images figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .menu-meals-images figure figcaption {
+      display: none; }
+
+.menu-meals_footer {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .menu-meals_footer button {
+    background-color: #fff;
+    border: 1px #12100e solid;
+    border-radius: 0.9rem;
+    color: #12100e;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 1rem; }
+
+.location h2 {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem 0; }
+
+.location .map {
+  height: 350px;
   width: 100%; }
-  .menu-coffee-images * {
-    flex: 1; }

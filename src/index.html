@@ -101,7 +101,7 @@
       <div class="menu-coffee" id="coffee">
         <h2>Try Our Coffee</h2>
         <div class="menu-coffee-images">
-          <figure class="coffee-fig">
+          <figure class="coffee-fig coffee-fig-active">
             <img
               src="img/french-press.jpg"
               alt="french press"
@@ -161,31 +161,63 @@
       <div class="menu-meals" id="meals">
         <h2>Try Our Meals</h2>
         <div class="menu-meals-images">
-          <img
-            src="img/pancakes.jpg"
-            alt="pancakes"
-            class="menu-meals_image1"
-          />
-          <img
-            src="img/breakfast-egg.jpg"
-            alt="breakfast"
-            class="menu-meals_image2"
-          />
-          <img
-            src="img/sandwiches.jpg"
-            alt="sandwiches"
-            class="menu-meals_image3"
-          />
-          <img src="img/bakery.jpg" alt="bakery" class="menu-meals_image4" />
+          <figure class="meal-fig meal-fig-active">
+            <img
+              src="img/pancakes.jpg"
+              alt="pancakes"
+              class="menu-meals_image1"
+            />
+            <figcaption>
+              <h3>Pancakes</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </figcaption>
+          </figure>
+          <figure class="meal-fig">
+            <img
+              src="img/breakfast-egg.jpg"
+              alt="breakfast"
+              class="menu-meals_image2"
+            />
+            <figcaption>
+              <h3>Full Breakfast</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </figcaption>
+          </figure>
+          <figure class="meal-fig">
+            <img
+              src="img/sandwiches.jpg"
+              alt="sandwiches"
+              class="menu-meals_image3"
+            />
+            <figcaption>
+              <h3>Sandwiches</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </figcaption>
+          </figure>
+          <figure class="meal-fig">
+            <img src="img/salad.jpg" alt="salad" class="menu-meals_image4" />
+            <figcaption>
+              <h3>Salad</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </figcaption>
+          </figure>
+          <figure class="meal-fig">
+            <img src="img/bakery.jpg" alt="bakery" class="menu-meals_image4" />
+            <figcaption>
+              <h3>Bakery</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </figcaption>
+          </figure>
         </div>
+
         <div class="menu-meals_footer">
-          <h3>All Drinks</h3>
+          <h3>All Meals</h3>
           <button class="download-menu">Download PDF</button>
         </div>
       </div>
       <div id="location" class="location">
         <h2>Our Location</h2>
-        <div id="map"></div>
+        <div class="mapy" id="map"></div>
       </div>
       <footer>
         <div class="footer-telefon">
@@ -202,5 +234,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="main.js"></script>
+    <script id="mapScript"></script>
   </body>
 </html>
