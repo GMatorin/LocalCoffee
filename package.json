@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Local Coffee House Landing",
   "main": "main.js",
+  "homepage": "https://gmatorin.github.io/LocalCoffee",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w scss/ -o src/css/ --recursive",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -15,9 +17,9 @@
   "bugs": {
     "url": "https://github.com/GMatorin/LocalCoffee/issues"
   },
-  "homepage": "https://github.com/GMatorin/LocalCoffee#readme",
   "dependencies": {
     "dotenv": "^8.1.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
