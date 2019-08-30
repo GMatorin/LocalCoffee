@@ -6,7 +6,8 @@
   "homepage": "https://gmatorin.github.io/LocalCoffee",
   "scripts": {
     "sass": "node-sass -w scss/ -o src/css/ --recursive",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "start": "main.js"
   },
   "repository": {
     "type": "git",
