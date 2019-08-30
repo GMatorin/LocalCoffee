@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant:400,500,700|Old+Standard+TT:400,700&display=swap");
+p {
+  font-size: 21px; }
+
+img {
+  width: 20px; }
+
+figcaption {
+  font-weight: 300; }
+
+.hide {
+  display: none; }
+
+.coffee-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 320px; }
+  .coffee-fig-active figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(88, 155, 125, 0.7); }
+
+.meal-fig-active {
+  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  height: 270px; }
+  .meal-fig-active figcaption {
+    display: flex !important;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(88, 155, 125, 0.7); }
+
+body {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 600; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container-all {
+  width: 100%; }
+
+.welcome-hero {
+  background: url(../img/coffee-shop.jpg);
+  background-position: 0 50%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .welcome-hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .welcome-hero_info {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .welcome-hero_info .text-wrapper {
+      height: 80%;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+
+.welcome .nav-info {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5em 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between; }
+  .welcome .nav-info .menu-btn {
+    z-index: 3;
+    margin-left: 2rem;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .welcome .nav-info .menu-btn .btn-line {
+      width: 100%;
+      height: 2px;
+      background: #12100e;
+      transition: all 0.5s ease-out; }
+    .welcome .nav-info .menu-btn.close {
+      transform: rotate(180deg); }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .welcome .nav-info .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); }
+  .welcome .nav-info-social {
+    flex-basis: 90%;
+    display: flex;
+    justify-content: flex-end; }
+    .welcome .nav-info-social a {
+      z-index: 3;
+      color: #12100e;
+      cursor: pointer; }
+      .welcome .nav-info-social a:hover {
+        transition: all 0.5s ease-out;
+        color: #545454; }
+      .welcome .nav-info-social a i {
+        margin-right: 2rem; }
+
+.about-coffee_info .info-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .about-coffee_info .info-wrapper p {
+    text-align: center;
+    color: #545454; }
+
+.about-coffee_image {
+  width: 100%;
+  position: relative; }
+  .about-coffee_image::before {
+    content: 'Arabica from Columbia and Ethiopia';
+    position: absolute;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(88, 155, 125, 0.7);
+    color: #fff;
+    height: 50px;
+    line-height: 50px; }
+  .about-coffee_image::after {
+    content: 'Robusta from Brazil and Nigeria';
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    bottom: 5px;
+    background-color: rgba(88, 155, 125, 0.7);
+    color: #fff;
+    height: 50px;
+    line-height: 50px; }
+  .about-coffee_image img {
+    width: 100%; }
+
+.about-meals_info .info-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .about-meals_info .info-wrapper p {
+    text-align: center;
+    color: #545454; }
+
+.about-meals_image {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [imgFirs-start] 1fr [imgSecond-start] 1fr [imgFirs-end] 1fr [imgSecond-end]; }
+  .about-meals_image img {
+    width: 100%; }
+    .about-meals_image img:first-child {
+      grid-column: imgFirs-start/imgFirs-end;
+      grid-row: 1/3;
+      z-index: 5; }
+    .about-meals_image img:last-child {
+      grid-column: imgSecond-start/imgSecond-end;
+      grid-row: 2/4; }
+
+.menu-coffee h2 {
+  text-align: center;
+  padding: 3.5rem 0 2.5rem 0; }
+
+.menu-coffee-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0; }
+  .menu-coffee-images figure {
+    order: 2; }
+    .menu-coffee-images figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .menu-coffee-images figure figcaption {
+      display: none; }
+
+.menu-coffee_footer {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .menu-coffee_footer button {
+    background-color: #fff;
+    border: 1px #12100e solid;
+    border-radius: 0.9rem;
+    color: #12100e;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 1rem; }
+
+.menu-meals h2 {
+  text-align: center;
+  padding: 1.5rem 0 2.5rem 0; }
+
+.menu-meals-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0; }
+  .menu-meals-images figure {
+    order: 2; }
+    .menu-meals-images figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .menu-meals-images figure figcaption {
+      display: none; }
+
+.menu-meals_footer {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .menu-meals_footer button {
+    background-color: #fff;
+    border: 1px #12100e solid;
+    border-radius: 0.9rem;
+    color: #12100e;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 1rem; }
+
+.location h2 {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem 0; }
+
+.location .map {
+  height: 350px;
+  width: 100%; }
