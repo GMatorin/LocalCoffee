@@ -1,0 +1,220 @@
+@include mediaMd {
+  .welcome {
+    .nav-info {
+      .menu-btn {
+        flex-basis: 7%;
+      }
+    }
+  }
+
+  .about-coffee {
+    &_image {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+  .about-meals_image {
+    width: 70%;
+  }
+
+  .coffee-fig-active {
+    height: 400px;
+  }
+  .meal-fig-active {
+    height: 400px;
+  }
+
+  footer {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@include mediaMd {
+  .about-coffee {
+    &_image {
+      width: 50%;
+    }
+  }
+  .about-meals_image {
+    width: 50%;
+  }
+
+  .menu-coffee-images {
+    grid-template-columns: none;
+
+    .coffee-fig {
+      grid-row: 1;
+    }
+    .coffee-fig-active {
+      grid-row: 1;
+      height: auto;
+    }
+  }
+
+  .menu-meals-images {
+    grid-template-columns: none;
+
+    .meal-fig {
+      grid-row: 1;
+    }
+    .meal-fig-active {
+      grid-row: 1;
+    }
+  }
+
+  footer {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@include mediaLg {
+  p,
+  h3 {
+    color: $gray;
+  }
+
+  .welcome {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100vh;
+    &-hero {
+      width: 85%;
+      flex-basis: 95%;
+      height: 90vh;
+      margin: 30px 0px 0 30px;
+      background-position: 0 20%;
+
+      &_info {
+        background: #fff;
+        width: 40%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        .text-wrapper {
+          height: 70%;
+          width: 85%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .nav-info {
+      position: relative;
+      flex-basis: 5%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+      margin: 30px 15px 36vh 15px;
+
+      .menu-btn {
+        margin-left: 0;
+        padding: 0;
+        flex-basis: 4%;
+        width: 35%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .btn-line {
+          background: $gray;
+        }
+      }
+      &_text {
+        display: flex;
+        z-index: 5;
+        flex-basis: 50%;
+        width: 20px;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        justify-content: space-between;
+        p {
+          transform: rotate(90deg);
+          display: initial;
+          white-space: nowrap;
+          font-size: 15px;
+        }
+      }
+
+      &-social {
+        flex-basis: 27%;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        a {
+          i {
+            color: $gray;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    &-coffee {
+      display: flex;
+      padding-top: 7rem;
+      justify-content: space-around;
+      &_info {
+        flex-basis: 25%;
+        .info-wrapper {
+          display: flex;
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          justify-content: start;
+          align-items: flex-start;
+          p {
+            text-align: initial;
+            color: $gray;
+          }
+        }
+      }
+      &_image {
+        width: 100%;
+        flex-basis: 50%;
+        position: relative;
+        &::before {
+          content: 'Arabica from Columbia and Ethiopia';
+          position: absolute;
+          z-index: 4;
+          display: block;
+          width: 100%;
+          top: 0;
+          text-align: center;
+          background-color: rgba(88, 155, 125, 0.7);
+          color: #fff;
+          height: 50px;
+          line-height: 50px;
+        }
+        &::after {
+          content: 'Robusta from Brazil and Nigeria';
+          position: absolute;
+          text-align: center;
+          margin: 0 auto;
+          z-index: 4;
+          display: block;
+          width: 100%;
+          bottom: 5px;
+          background-color: rgba(88, 155, 125, 0.7);
+          color: #fff;
+          height: 50px;
+          line-height: 50px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

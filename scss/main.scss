@@ -104,6 +104,9 @@ body {
         }
       }
     }
+    &_p {
+      display: none;
+    }
 
     &-social {
       flex-basis: 90%;
@@ -306,10 +309,31 @@ body {
 .location {
   h2 {
     text-align: center;
-    padding: 1.5rem 0 0.5rem 0;
+    padding: 1rem 0 0.5rem 0;
   }
   .map {
     height: 350px;
     width: 100%;
   }
 }
+
+footer {
+  margin: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    background-color: lighten($gray, 15);
+    height: 1px;
+    top: -15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@import 'mobile';
