@@ -19,7 +19,6 @@
     "url": "https://github.com/GMatorin/LocalCoffee/issues"
   },
   "dependencies": {
-    "dotenv": "^8.1.0",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
