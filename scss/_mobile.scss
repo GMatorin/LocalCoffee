@@ -87,16 +87,15 @@
     justify-content: space-evenly;
     height: 100vh;
     &-hero {
-      width: 85%;
       flex-basis: 95%;
-      height: 90vh;
-      margin: 30px 0px 0 30px;
+      height: 89vh;
+      margin: 45px 0px 0 45px;
       background-position: 0 20%;
 
       &_info {
         background: #fff;
-        width: 40%;
-        height: 35%;
+        width: 35%;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,9 +115,9 @@
       flex-basis: 5%;
       flex-direction: column;
       justify-content: space-between;
+      height: 59.6vh;
+      margin: 45px 15px 0 15px;
       padding: 0;
-      margin: 30px 15px 14.5rem 15px;
-
       .menu-btn {
         margin-left: 0;
         padding: 0;
@@ -158,6 +157,9 @@
           i {
             color: $gray;
             margin-right: 0;
+          }
+          &:first-child {
+            margin-bottom: 0.5rem;
           }
         }
       }
@@ -387,7 +389,11 @@
   }
 
   .location {
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 4rem 0;
+
+    h2 {
+      padding-bottom: 2.5rem;
+    }
     .map {
       width: 85%;
       margin: 0 auto;
