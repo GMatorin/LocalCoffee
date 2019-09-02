@@ -14,7 +14,7 @@
     <title>Your Local Coffee</title>
   </head>
   <body>
-    <nav class="hide">
+    <nav class="hide-nav">
       <ul>
         <li><a href="#home">home</a></li>
         <li><a href="#about">about</a></li>
@@ -43,11 +43,13 @@
             <div class="btn-line"></div>
             <div class="btn-line"></div>
           </div>
-          <p class="hide">mylocalcoffee@gmail.com</p>
-          <p class="hide">+1 111 222 333</p>
+          <div class="nav-info_text">
+            <p class="nav-info_p">mylocalcoffee@gmail.com</p>
+            <p class="nav-info_p">+1-111-222-333</p>
+          </div>
           <div class="nav-info-social">
-            <a href=""> <i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href=""> <i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+            <a href=""> <i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -179,7 +181,7 @@
               class="menu-meals_image2"
             />
             <figcaption>
-              <h3>Full Breakfast</h3>
+              <h3>Breakfast</h3>
               <p>Lorem ipsum dolor sit amet.</p>
             </figcaption>
           </figure>
@@ -197,7 +199,7 @@
           <figure class="meal-fig">
             <img src="img/salad.jpg" alt="salad" class="menu-meals_image4" />
             <figcaption>
-              <h3>Salad</h3>
+              <h3>Salads</h3>
               <p>Lorem ipsum dolor sit amet.</p>
             </figcaption>
           </figure>
@@ -217,7 +219,7 @@
       </div>
       <div id="location" class="location">
         <h2>Our Location</h2>
-        <div class="mapy" id="map"></div>
+        <div class="map" id="map"></div>
       </div>
       <footer>
         <div class="footer-telefon">
@@ -236,6 +238,10 @@
     </div>
 
     <script src="main.js"></script>
-    <script id="mapScript"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKUaQVNRIhnKiATTuQCnoC6QIQXVEK2S4&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
