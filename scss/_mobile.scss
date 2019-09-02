@@ -228,7 +228,7 @@
     &-meals {
       display: flex;
       flex-direction: row-reverse;
-      margin-top: 7rem;
+      margin-top: 8.5rem;
       justify-content: space-evenly;
       &_info {
         flex-basis: 45%;
@@ -398,6 +398,46 @@
       width: 85%;
       margin: 0 auto;
       height: 400px;
+    }
+  }
+}
+
+@include mediaXLg {
+  .about {
+    &-coffee {
+      &_image {
+        &::before {
+          right: -35px;
+        }
+        &::after {
+          left: -35px;
+        }
+      }
+    }
+    &-meals {
+      #leaves-green {
+        top: 250px;
+      }
+
+      &_image {
+        flex-basis: 30%;
+      }
+    }
+  }
+
+  .menu-coffee {
+    &-images {
+      .coffee-fig-active {
+        height: 440px;
+      }
+    }
+  }
+
+  .menu-meals {
+    &-images {
+      .meal-fig-active {
+        height: 440px;
+      }
     }
   }
 }

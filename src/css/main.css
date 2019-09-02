@@ -104,7 +104,6 @@ body {
   .welcome .nav-info .menu-btn {
     z-index: 3;
     margin-left: 2rem;
-    padding: 0.7rem 0;
     cursor: pointer;
     transition: all 0.5s ease-out;
     flex-basis: 10%;
@@ -278,16 +277,18 @@ body {
     cursor: pointer;
     margin: 0 1rem; }
 
-.location h2 {
-  text-align: center;
-  padding: 1rem 0 0.5rem 0; }
-
-.location .map {
-  height: 350px;
-  width: 100%; }
+.location {
+  padding-bottom: 2rem; }
+  .location h2 {
+    text-align: center;
+    padding: 1rem 0 0.5rem 0; }
+  .location .map {
+    height: 350px;
+    width: 100%; }
 
 footer {
   margin: 3rem 0 1rem 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-around;
   position: relative; }
@@ -461,7 +462,7 @@ footer {
   .about-meals {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 7rem;
+    margin-top: 8.5rem;
     justify-content: space-evenly; }
     .about-meals_info {
       flex-basis: 45%;
@@ -584,3 +585,17 @@ footer {
       width: 85%;
       margin: 0 auto;
       height: 400px; } }
+
+@media screen and (min-width: 1250px) {
+  .about-coffee_image::before {
+    right: -35px; }
+  .about-coffee_image::after {
+    left: -35px; }
+  .about-meals #leaves-green {
+    top: 250px; }
+  .about-meals_image {
+    flex-basis: 30%; }
+  .menu-coffee-images .coffee-fig-active {
+    height: 440px; }
+  .menu-meals-images .meal-fig-active {
+    height: 440px; } }

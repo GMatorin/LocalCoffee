@@ -39,3 +39,9 @@ figcaption {
     @content;
   }
 }
+
+@mixin mediaXLg {
+  @media screen and (min-width: 1250px) {
+    @content;
+  }
+}
