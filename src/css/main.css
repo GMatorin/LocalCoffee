@@ -149,7 +149,8 @@ body {
   align-items: center; }
   .about-coffee_info .info-wrapper p {
     text-align: center;
-    color: #545454; }
+    color: #545454;
+    margin-top: 0.5rem; }
 
 .about-coffee_image {
   width: 100%;
@@ -192,7 +193,9 @@ body {
   align-items: center; }
   .about-meals_info .info-wrapper p {
     text-align: center;
-    color: #545454; }
+    color: #545454;
+    margin-top: 0.5rem;
+    width: 80%; }
 
 .about-meals_image {
   width: 80%;
