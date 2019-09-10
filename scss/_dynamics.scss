@@ -1,12 +1,14 @@
-.hide-nav,
 .hide {
   display: none;
 }
 
 .coffee-fig-active {
-  order: 1;
+  //order: 1;
+
   grid-column: 1/3;
   grid-row: 1/2;
+
+  grid-column: span 2;
   position: relative;
   height: 320px;
   figcaption {
@@ -26,9 +28,12 @@
 }
 
 .meal-fig-active {
-  order: 1;
+  // order: 1;
+
   grid-column: 1/3;
   grid-row: 1/2;
+
+  grid-column: span 2;
   position: relative;
   height: 270px;
   figcaption {
@@ -45,4 +50,23 @@
 
     background-color: rgba(88, 155, 125, 0.7);
   }
+}
+
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden;
+
+  nav {
+    transform: translateX(0);
+  }
+
+  /*
+  .container-all {
+    transform: translateX(80%);
+  }
+
+  .menu-button {
+    transform: translateX(70%);
+  }
+  */
 }

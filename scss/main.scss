@@ -19,6 +19,50 @@ body {
   width: 100%;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  z-index: 10;
+
+  transform: translateX(-100%);
+  transition: transform ease-in-out 250ms;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    background: lighten($green, 5);
+    align-items: stretch;
+    li {
+      z-index: 10;
+      text-align: center;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $gray;
+      }
+
+      &:hover {
+        background: lighten($green, 15);
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: calc(100vh / 10) 0;
+        line-height: 0;
+        width: 100%;
+        color: #000;
+      }
+    }
+  }
+}
+
 .welcome {
   &-hero {
     background: url(../img/coffee-shop.jpg);
@@ -89,7 +133,7 @@ body {
         .btn-line {
           // Line 1 - Rotate
           &:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 4px);
           }
 
           // Line 2 - Hide
@@ -232,10 +276,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0;
-
     figure {
       order: 2;
       img {
+        z-index: 10;
         display: block;
         width: 100%;
         height: 100%;
@@ -243,6 +287,10 @@ body {
       }
       figcaption {
         display: none;
+      }
+      &:hover {
+        @include easeOut();
+        filter: brightness(70%);
       }
     }
   }
@@ -262,6 +310,11 @@ body {
       font-size: 16px;
       cursor: pointer;
       margin: 0 1rem;
+      &:hover {
+        @include easeOut();
+        background: rgba(88, 155, 125, 0.7);
+        border: 1px #fff solid;
+      }
     }
   }
 }
@@ -287,6 +340,10 @@ body {
       figcaption {
         display: none;
       }
+      &:hover {
+        @include easeOut();
+        filter: brightness(70%);
+      }
     }
   }
 
@@ -305,6 +362,11 @@ body {
       font-size: 16px;
       cursor: pointer;
       margin: 0 1rem;
+      &:hover {
+        @include easeOut();
+        background: rgba(88, 155, 125, 0.7);
+        border: 1px #fff solid;
+      }
     }
   }
 }
