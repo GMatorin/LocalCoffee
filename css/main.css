@@ -5,6 +5,21 @@ img {
 figcaption {
   font-weight: 300; }
 
+.menu-meals-images figure .menu-meals_image1 {
+  object-position: center 70%; }
+
+.menu-meals-images figure .menu-meals_image1 {
+  object-position: center 90%; }
+
+.menu-meals-images figure .menu-meals_image2 {
+  object-position: center 30%; }
+
+.menu-coffee-images figure .menu-coffee_image2 {
+  object-position: center 100%; }
+
+.menu-coffee-images figure .menu-coffee_image5 {
+  object-position: center 60%; }
+
 .hide {
   display: none; }
 
@@ -278,6 +293,8 @@ nav {
       object-fit: cover; }
     .menu-coffee-images figure figcaption {
       display: none; }
+      .menu-coffee-images figure figcaption p {
+        text-align: center; }
     .menu-coffee-images figure:hover {
       transition: all 0.5s ease-out;
       filter: brightness(70%); }
@@ -319,6 +336,8 @@ nav {
       object-fit: cover; }
     .menu-meals-images figure figcaption {
       display: none; }
+      .menu-meals-images figure figcaption p {
+        text-align: center; }
     .menu-meals-images figure:hover {
       transition: all 0.5s ease-out;
       filter: brightness(70%); }
