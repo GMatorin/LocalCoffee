@@ -7,7 +7,7 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o src/css/ --recursive",
     "deploy": "gh-pages -d src",
-    "start": "node main.js"
+    "start": "main.js"
   },
   "repository": {
     "type": "git",
