@@ -287,6 +287,9 @@ nav {
       }
       figcaption {
         display: none;
+        p {
+          text-align: center;
+        }
       }
       &:hover {
         @include easeOut();
@@ -339,6 +342,9 @@ nav {
       }
       figcaption {
         display: none;
+        p {
+          text-align: center;
+        }
       }
       &:hover {
         @include easeOut();
