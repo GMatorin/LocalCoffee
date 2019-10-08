@@ -367,20 +367,10 @@ nav {
   .location h2 {
     text-align: center;
     padding: 1rem 0 0.5rem 0; }
-  .location .map-wrapper {
-    position: relative; }
-    .location .map-wrapper .map {
-      height: 350px;
-      width: 100%;
-      display: flex; }
-    .location .map-wrapper .locationPointer {
-      position: absolute;
-      background: url(../img/pointer.png);
-      left: 45%;
-      top: 38%;
-      z-index: 100;
-      width: 32px;
-      height: 32px; }
+  .location .map {
+    height: 350px;
+    width: 100%;
+    display: flex; }
 
 footer {
   margin: 3rem 0 1rem 0;
