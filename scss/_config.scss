@@ -13,9 +13,6 @@ $font-main: 'Cormorant', serif;
 @mixin easeIn {
   transition: all 0.5s ease-in;
 }
-p {
-  //font-size: 21px;
-}
 
 img {
   width: 20px;
