@@ -585,6 +585,10 @@ footer {
           flex-direction: column;
           justify-content: space-between;
           text-align: initial; }
+          .welcome-hero_info .text-wrapper h3 {
+            font-size: 23px; }
+          .welcome-hero_info .text-wrapper p {
+            font-size: 19px; }
     .welcome .nav-info {
       position: relative;
       flex-basis: 5%;
