@@ -28,7 +28,7 @@ figcaption {
   grid-row: 1/2;
   grid-column: span 2;
   position: relative;
-  height: 320px; }
+  height: 200px; }
   .coffee-fig-active::after {
     display: none !important; }
   .coffee-fig-active figcaption {
@@ -207,49 +207,52 @@ nav {
       .welcome .nav-info-social a i {
         margin-right: 2rem; }
 
-.about-coffee_info .info-wrapper {
-  display: flex;
-  margin: 0 auto;
-  padding: 2.5rem 0;
-  width: 80%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .about-coffee_info .info-wrapper p {
-    text-align: center;
-    color: #545454;
-    margin-top: 0.5rem; }
-
-.about-coffee_image {
-  width: 100%;
-  position: relative; }
-  .about-coffee_image::before {
-    content: 'Arabica from Columbia and Ethiopia';
-    position: absolute;
-    z-index: 4;
-    display: block;
+.about-coffee {
+  margin: 0 auto; }
+  .about-coffee_info {
+    margin-left: 2.5rem; }
+    .about-coffee_info .info-wrapper {
+      display: flex;
+      margin: 0 auto;
+      padding: 2.5rem 0;
+      width: 80%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .about-coffee_info .info-wrapper p {
+        text-align: center;
+        color: #545454;
+        margin-top: 0.5rem; }
+  .about-coffee_image {
     width: 100%;
-    top: 0;
-    text-align: center;
-    background-color: rgba(88, 155, 125, 0.7);
-    color: #fff;
-    height: 50px;
-    line-height: 50px; }
-  .about-coffee_image::after {
-    content: 'Robusta from Brazil and Nigeria';
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    z-index: 4;
-    display: block;
-    width: 100%;
-    bottom: 5px;
-    background-color: rgba(88, 155, 125, 0.7);
-    color: #fff;
-    height: 50px;
-    line-height: 50px; }
-  .about-coffee_image img {
-    width: 100%; }
+    position: relative; }
+    .about-coffee_image::before {
+      content: 'Arabica from Columbia and Ethiopia';
+      position: absolute;
+      z-index: 4;
+      display: block;
+      width: 100%;
+      top: 0;
+      text-align: center;
+      background-color: rgba(88, 155, 125, 0.7);
+      color: #fff;
+      height: 50px;
+      line-height: 50px; }
+    .about-coffee_image::after {
+      content: 'Robusta from Brazil and Nigeria';
+      position: absolute;
+      text-align: center;
+      margin: 0 auto;
+      z-index: 4;
+      display: block;
+      width: 100%;
+      bottom: 5px;
+      background-color: rgba(88, 155, 125, 0.7);
+      color: #fff;
+      height: 50px;
+      line-height: 50px; }
+    .about-coffee_image img {
+      width: 100%; }
 
 .about-meals_info .info-wrapper {
   display: flex;
@@ -435,6 +438,12 @@ footer {
     top: -15px; }
   footer p {
     font-size: 12px; }
+
+@media screen and (min-width: 420px) {
+  .coffee-fig-active {
+    height: 320px; }
+  .meal-fig-active {
+    height: 320px; } }
 
 @media screen and (min-width: 630px) {
   .welcome .nav-info .menu-btn {
@@ -637,7 +646,7 @@ footer {
   .about-coffee {
     display: flex;
     padding-top: 7rem;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
     .about-coffee_info {
       flex-basis: 35%;
       display: flex;
@@ -685,7 +694,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 8.5rem;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
     .about-meals_info {
       flex-basis: 45%;
       position: relative; }
@@ -749,6 +758,6 @@ footer {
   .about-meals_image {
     flex-basis: 30%; }
   .menu-coffee-images .coffee-fig-active {
-    height: 440px; }
+    height: 500px; }
   .menu-meals-images .meal-fig-active {
-    height: 440px; } }
+    height: 490px; } }
