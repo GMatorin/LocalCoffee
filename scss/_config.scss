@@ -39,6 +39,12 @@ figcaption {
   object-position: center 60%;
 }
 
+@mixin mediaXs {
+  @media screen and (min-width: 420px) {
+    @content;
+  }
+}
+
 @mixin mediaSm {
   @media screen and (min-width: 630px) {
     @content;

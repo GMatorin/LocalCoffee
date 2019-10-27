@@ -1,3 +1,12 @@
+@include mediaXs {
+  .coffee-fig-active {
+    height: 320px;
+  }
+  .meal-fig-active {
+    height: 320px;
+  }
+}
+
 @include mediaSm {
   .welcome {
     .nav-info {
@@ -288,7 +297,7 @@
     &-coffee {
       display: flex;
       padding-top: 7rem;
-      justify-content: space-evenly;
+      justify-content: space-around;
       &_info {
         flex-basis: 35%;
         display: flex;
@@ -348,7 +357,7 @@
       display: flex;
       flex-direction: row-reverse;
       margin-top: 8.5rem;
-      justify-content: space-evenly;
+      justify-content: space-around;
       &_info {
         flex-basis: 45%;
         position: relative;
@@ -464,7 +473,7 @@
   .menu-coffee {
     &-images {
       .coffee-fig-active {
-        height: 440px;
+        height: 500px;
       }
     }
   }
@@ -472,7 +481,7 @@
   .menu-meals {
     &-images {
       .meal-fig-active {
-        height: 440px;
+        height: 490px;
       }
     }
   }

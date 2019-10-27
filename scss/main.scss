@@ -175,7 +175,9 @@ nav {
 
 .about {
   &-coffee {
+    margin: 0 auto;
     &_info {
+      margin-left: 2.5rem;
       .info-wrapper {
         display: flex;
         margin: 0 auto;
