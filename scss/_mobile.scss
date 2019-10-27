@@ -48,16 +48,19 @@
       }
     }
   }
-
-  .about-coffee {
-    &_image {
+  #about {
+    .about-coffee {
+      &_info {
+        margin: 0 auto;
+      }
+      &_image {
+        width: 50%;
+      }
+    }
+    .about-meals_image {
       width: 50%;
     }
   }
-  .about-meals_image {
-    width: 50%;
-  }
-
   .menu-coffee-images {
     grid-template-columns: none;
 
