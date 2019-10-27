@@ -258,7 +258,7 @@ nav {
   display: flex;
   margin: 0 auto;
   padding: 2.5rem 0;
-  width: 80%;
+  width: 83%;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
@@ -266,7 +266,7 @@ nav {
     text-align: center;
     color: #545454;
     margin-top: 0.5rem;
-    width: 80%; }
+    width: 100%; }
 
 .about-meals_image {
   width: 80%;
@@ -463,9 +463,11 @@ footer {
 @media screen and (min-width: 800px) {
   .welcome .nav-info .menu-btn {
     flex-basis: 5%; }
-  .about-coffee_image {
+  #about .about-coffee_info {
+    margin: 0 auto; }
+  #about .about-coffee_image {
     width: 50%; }
-  .about-meals_image {
+  #about .about-meals_image {
     width: 50%; }
   .menu-coffee-images {
     grid-template-columns: none; }
