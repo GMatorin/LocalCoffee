@@ -207,22 +207,23 @@ nav {
       .welcome .nav-info-social a i {
         margin-right: 2rem; }
 
+.about .info-wrapper p {
+  font-size: 1.1rem; }
+
 .about-coffee {
   margin: 0 auto; }
-  .about-coffee_info {
-    margin-left: 2.5rem; }
-    .about-coffee_info .info-wrapper {
-      display: flex;
-      margin: 0 auto;
-      padding: 2.5rem 0;
-      width: 80%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .about-coffee_info .info-wrapper p {
-        text-align: center;
-        color: #545454;
-        margin-top: 0.5rem; }
+  .about-coffee_info .info-wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about-coffee_info .info-wrapper p {
+      text-align: center;
+      color: #545454;
+      margin-top: 0.5rem; }
   .about-coffee_image {
     width: 100%;
     position: relative; }
@@ -448,11 +449,13 @@ footer {
 @media screen and (min-width: 630px) {
   .welcome .nav-info .menu-btn {
     flex-basis: 7%; }
+  .about .info-wrapper p {
+    font-size: 20px; }
   .about-coffee_image {
     margin: 0 auto;
     width: 70%; }
   .about-meals_image {
-    width: 70%; }
+    width: 60%; }
   .coffee-fig-active {
     height: 400px; }
   .meal-fig-active {
@@ -463,12 +466,12 @@ footer {
 @media screen and (min-width: 800px) {
   .welcome .nav-info .menu-btn {
     flex-basis: 5%; }
-  #about .about-coffee_info {
+  .about-coffee_info {
     margin: 0 auto; }
-  #about .about-coffee_image {
+  .about-coffee_image {
     width: 50%; }
-  #about .about-meals_image {
-    width: 50%; }
+  .about-meals_image {
+    width: 45%; }
   .menu-coffee-images {
     grid-template-columns: none; }
     .menu-coffee-images .coffee-fig {
@@ -650,6 +653,7 @@ footer {
     padding-top: 7rem;
     justify-content: space-around; }
     .about-coffee_info {
+      margin: 0;
       flex-basis: 35%;
       display: flex;
       flex-direction: column;
@@ -668,6 +672,7 @@ footer {
       .about-coffee_info img {
         width: 200px; }
     .about-coffee_image {
+      margin: 0;
       flex-basis: 40%;
       position: relative;
       margin: 0 65px 0 0;
@@ -751,6 +756,8 @@ footer {
       height: 400px; } }
 
 @media screen and (min-width: 1250px) {
+  .about-coffee_info {
+    margin: 0 0 0 2rem; }
   .about-coffee_image::before {
     right: -35px; }
   .about-coffee_image::after {

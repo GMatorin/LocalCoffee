@@ -174,10 +174,14 @@ nav {
 }
 
 .about {
+  .info-wrapper {
+    p {
+      font-size: 1.1rem;
+    }
+  }
   &-coffee {
     margin: 0 auto;
     &_info {
-      margin-left: 2.5rem;
       .info-wrapper {
         display: flex;
         margin: 0 auto;
