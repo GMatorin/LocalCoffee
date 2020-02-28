@@ -149,7 +149,7 @@ nav {
   .welcome-hero_info {
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
-    padding: 20px;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center; }
