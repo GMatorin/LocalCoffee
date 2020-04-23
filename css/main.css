@@ -286,7 +286,7 @@ nav {
 
 .menu-coffee h2 {
   text-align: center;
-  padding: 3.5rem 0 2.5rem 0; }
+  margin: 3.5rem 0 2.5rem 0; }
 
 .menu-coffee-images {
   display: grid;
@@ -343,7 +343,8 @@ nav {
     padding: 0.7rem 1rem;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    outline: none; }
     .menu-coffee_footer button:hover {
       transition: all 0.5s ease-out;
       background: rgba(88, 155, 125, 0.7);
@@ -407,7 +408,8 @@ nav {
     padding: 0.7rem 1rem;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    outline: none; }
     .menu-meals_footer button:hover {
       transition: all 0.5s ease-out;
       background: rgba(88, 155, 125, 0.7);
@@ -591,7 +593,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 17px; }
+        font-size: 17px;
+        padding: 0; }
         .welcome-hero_info .text-wrapper {
           height: 70%;
           width: 85%;
@@ -732,7 +735,8 @@ footer {
           grid-column: imgSecond-start/imgSecond-end;
           grid-row: 2/4; }
   .menu-coffee {
-    padding: 5rem 0 2rem 0; }
+    margin: 4rem 0 2rem 0;
+    padding-top: 1rem; }
     .menu-coffee-images .coffee-fig-active {
       height: 350px; }
     .menu-coffee_footer h3 {
