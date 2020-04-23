@@ -42,7 +42,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #589b7d; }
+    background-color: rgba(88, 155, 125, 0.7); }
 
 .meal-fig-active {
   grid-column: 1/3;
