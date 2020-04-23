@@ -227,6 +227,7 @@
         justify-content: center;
         align-items: center;
         font-size: 17px;
+        padding: 0;
         .text-wrapper {
           height: 70%;
           width: 85%;
@@ -413,7 +414,8 @@
   }
 
   .menu-coffee {
-    padding: 5rem 0 2rem 0;
+    margin: 4rem 0 2rem 0;
+    padding-top: 1rem;
 
     &-images {
       .coffee-fig-active {

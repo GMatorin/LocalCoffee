@@ -276,7 +276,7 @@ nav {
 .menu-coffee {
   h2 {
     text-align: center;
-    padding: 3.5rem 0 2.5rem 0;
+    margin: 3.5rem 0 2.5rem 0;
   }
 
   &-images {
@@ -335,6 +335,7 @@ nav {
       font-size: 16px;
       cursor: pointer;
       margin: 0 1rem;
+      outline: none;
       &:hover {
         @include easeOut();
         background: rgba(88, 155, 125, 0.7);
@@ -404,6 +405,7 @@ nav {
       font-size: 16px;
       cursor: pointer;
       margin: 0 1rem;
+      outline: none;
       &:hover {
         @include easeOut();
         background: rgba(88, 155, 125, 0.7);
